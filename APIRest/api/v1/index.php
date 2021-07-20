@@ -5,7 +5,26 @@ class Rest {
     {
         $url = explode('/', $_REQUEST['url']);
         
-        $classe = $url[0]
+        $classe = ucfirst($url[0]);
+        array_shift($url);
+
+        $metodo = $url[0];
+        array_shift($url);
+        
+        $parametros = array();
+        $parametros = $url;
+
+        if(class_exists($classe)) {
+            if(method_exists($classe, $metodo)) {
+                $ retorno = call_user_func_array(array(new $classe, $metodo), $parametros);
+
+                return json_encode(array('status' => 'sucesso', 'dados' => $retorno));
+            } else {
+                return json_encode(array('status' => 'erro', 'dados' => 'Método Inexistente!'));
+            }
+        } else {
+            return json_encode(array('status' => 'erro', 'dados' => 'Classe Inexistente!'));
+        }
     }
 }
 
