@@ -1,5 +1,13 @@
 <h2> Sobre o PHP </h2>
 
+<br>
+
+<div align="center">
+<img width="450" src="https://petsistemas.ufms.br/wp-content/uploads/2015/09/Webysther_20160423_-_Elephpant.svg_.png">
+</div>
+
+<br>
+
 PHP (um acrônimo recursivo para PHP: Hypertext Preprocessor) é uma linguagem de script open source de uso geral, muito utilizada, 
 e especialmente adequada para o desenvolvimento web e que pode ser embutida dentro do HTML.
 
