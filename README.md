@@ -3,7 +3,7 @@
 <br>
 
 <div align="center">
-<img width="450" src="https://www.eufacoprogramas.com/wp-content/uploads/2011/08/php1.png">
+<img width="450" src="https://pngimg.com/uploads/php/php_PNG35.png">
 </div>
 
 <br>
